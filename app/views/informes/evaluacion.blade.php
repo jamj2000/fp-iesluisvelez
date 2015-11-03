@@ -119,7 +119,7 @@ $ciclo = $dato->ciclo;
         <div id="pag1">
 	<table class="T_17cm">
 	<tr>
-	<td> {{ HTML::image('img/logo.png', 'IES Guadalpeña', array('style' => 'width:7cm')) }} </td>
+	<td> {{ HTML::image('img/logo.png', 'Logo de Centro Educativo', array('style' => 'width:7cm')) }} </td>
 	<td class="H" style="text-align: right; vertical-align: bottom;">INFORME DE EVALUACIÓN - Pág. 1/2</td>
 	</tr>
 	</table>
@@ -170,7 +170,7 @@ $ciclo = $dato->ciclo;
 	<div  id="pag2">
 	<table class="T_17cm">
 	<tr>
-	<td> {{ HTML::image('img/logo.png', 'IES Guadalpeña', array('style' => 'width:7cm')) }} </td>
+	<td> {{ HTML::image('img/logo.png', 'Logo de Centro Educativo', array('style' => 'width:7cm')) }} </td>
 	<td class="H" style="text-align: right; vertical-align: bottom;">INFORME DE EVALUACIÓN - Pág. 2/2</td>
 	</tr>
 	</table>

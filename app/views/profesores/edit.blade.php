@@ -52,8 +52,7 @@
 		{{-- Form::text('tutoria', Input::old('tutoria'), array('class' => 'form-control')) --}}
 		<select class="form-control text-right" name='tutoria'>
 		  <option value=''        @if ($profesor->tutoria == '')        {{ 'selected' }} @endif>       </option> 
-		  <option value='1FPGM A' @if ($profesor->tutoria == '1FPGM A') {{ 'selected' }} @endif>1FPGM A</option>
-		  <option value='1FPGM B' @if ($profesor->tutoria == '1FPGM B') {{ 'selected' }} @endif>1FPGM B</option>
+		  <option value='1FPGM'   @if ($profesor->tutoria == '1FPGM')   {{ 'selected' }} @endif>1FPGM  </option>
 		  <option value='2FPGM'   @if ($profesor->tutoria == '2FPGM')   {{ 'selected' }} @endif>2FPGM  </option>
 		  <option value='1FPGS'   @if ($profesor->tutoria == '1FPGS')   {{ 'selected' }} @endif>1FPGS  </option>
 		  <option value='2FPGS'   @if ($profesor->tutoria == '2FPGS')   {{ 'selected' }} @endif>2FPGS  </option>

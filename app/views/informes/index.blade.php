@@ -54,14 +54,10 @@ var STATE_NONE=0;var STATE_SOME=1;var STATE_ALL=2;var UNCHECKED_NORM="UNCHECKED_
 	<input type="hidden" id="tristateBoxInput" name="tristateBoxInput" value="0" />
 
 	<div class="checkbox">
-	    <label> <input type="checkbox" name="1FPGM A" value="s"  checked >
-	      <a href="{{URL::to('informes/evaluacion/1FPGM A/pdf') }}"> <img src="{{ URL::asset('img/iconos/pdf.png')}}"  width=16 ></a>
-	      {{ HTML::link( 'informes/evaluacion/1FPGM A/html', '1FPGM_A') }}	
+	    <label> <input type="checkbox" name="1FPGM" value="s"  checked >
+	      <a href="{{URL::to('informes/evaluacion/1FPGM/pdf') }}"> <img src="{{ URL::asset('img/iconos/pdf.png')}}"  width=16 ></a>
+	      {{ HTML::link( 'informes/evaluacion/1FPGM/html', '1FPGM') }}	
 	    </label><br>
-	    <label> <input type="checkbox" name="1FPGM B" value="s"  checked >
-	      <a href="{{URL::to('informes/evaluacion/1FPGM B/pdf') }}"> <img src="{{ URL::asset('img/iconos/pdf.png')}}"  width=16 ></a>
-	      {{ HTML::link( 'informes/evaluacion/1FPGM B/html', '1FPGM_B') }}	
-	    </label><br>	
 	    <label> <input type="checkbox" name="2FPGM"   value="s"  checked >
 	      <a href="{{URL::to('informes/evaluacion/2FPGM/pdf') }}"> <img src="{{ URL::asset('img/iconos/pdf.png')}}"  width=16 ></a>
 	      {{ HTML::link( 'informes/evaluacion/2FPGM/html', '2FPGM') }}	

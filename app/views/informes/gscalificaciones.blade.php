@@ -19,7 +19,7 @@
 	body { 
 	  max-width:29.7cm;
 	  padding-top:1.5cm; 
-	  margin-bottom:1cm; margin-left:2cm; margin-right:2cm; writing-mode:lr-tb; 
+	  margin-bottom:0.5cm; margin-left:2cm; margin-right:2cm; writing-mode:lr-tb; 
 	}
 	
 	.H { 
@@ -107,7 +107,7 @@ function rellenar_datos() {
 	
 	<table class="T_25cm">
 	<tr>
-	<td> {{ HTML::image('img/logo.png', 'IES Guadalpeña', array('style' => 'width:7cm')) }} </td>
+	<td> {{ HTML::image('img/logo.png', 'Logo de Centro Educativo', array('style' => 'width:7cm')) }} </td>
 	<td class="H" style="text-align: right; vertical-align: bottom;">INFORME DE RESULTADOS DE APRENDIZAJE</td>
 	</tr>
 	</table>
@@ -136,18 +136,18 @@ function rellenar_datos() {
 	
 	<tr>
 	<td class="T_12cm">
-	<p class="P_modulo">Fundamentos de hardware.</p> {{-- 13 --}}
+	<p class="P_modulo">Fundamentos de hardware.</p> {{-- 8 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m13-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m13-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m13-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m13-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m13-r5"> </p></td>
-	<td class="celda gris"><p class="datos" id="m13-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m13-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m13-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m13-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m8-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m8-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m8-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m8-r4"> </p></td>
+	<td class="celda">     <p class="datos" id="m8-r5"> </p></td>
+	<td class="celda gris"><p class="datos" id="m8-r6"> </p></td>
+	<td class="celda gris"><p class="datos" id="m8-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m8-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m8-r9"> </p></td>
 	</tr>
 	</table>
 	</td>
@@ -157,7 +157,174 @@ function rellenar_datos() {
 	
 	<tr>
 	<td class="T_12cm">
-	<p class="P_modulo">Implantación de sistemas operativos.</p> {{-- 11 --}}
+	<p class="P_modulo">Implantación de sistemas operativos.</p> {{-- 6 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m6-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m6-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m6-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m6-r4"> </p></td>
+	<td class="celda">     <p class="datos" id="m6-r5"> </p></td>
+	<td class="celda">     <p class="datos" id="m6-r6"> </p></td>
+	<td class="celda">     <p class="datos" id="m6-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m6-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m6-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	<td class="T_12cm">
+	<p class="P_modulo">Administración de sistemas operativos.</p> {{-- 19 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m19-r1"></p></td>
+	<td class="celda">     <p class="datos" id="m19-r2"></p></td>
+	<td class="celda">     <p class="datos" id="m19-r3"></p></td>
+	<td class="celda">     <p class="datos" id="m19-r4"></p></td>
+	<td class="celda">     <p class="datos" id="m19-r5"></p></td>
+	<td class="celda">     <p class="datos" id="m19-r6"></p></td>
+	<td class="celda">     <p class="datos" id="m19-r7"></p></td>
+	<td class="celda gris"><p class="datos" id="m19-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m19-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td class="T_12cm">
+	<p class="P_modulo">Planificación y administración de redes.</p> {{-- 7 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m7-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m7-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m7-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m7-r4"> </p></td>
+	<td class="celda">     <p class="datos" id="m7-r5"> </p></td>
+	<td class="celda">     <p class="datos" id="m7-r6"> </p></td>
+	<td class="celda">     <p class="datos" id="m7-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m7-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m7-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	<td class="T_12cm">
+	<p class="P_modulo">Servicios de red e Internet.</p>{{-- 20 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m20-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m20-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m20-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m20-r4"> </p></td>
+	<td class="celda">     <p class="datos" id="m20-r5"> </p></td>
+	<td class="celda">     <p class="datos" id="m20-r6"> </p></td>
+	<td class="celda">     <p class="datos" id="m20-r7"> </p></td>
+	<td class="celda">     <p class="datos" id="m20-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m20-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	
+	<tr>
+	<td class="T_12cm">
+	<p class="P_modulo">Gestión de bases de datos.</p>{{-- 9 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m9-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m9-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m9-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m9-r4"> </p></td>
+	<td class="celda">     <p class="datos" id="m9-r5"> </p></td>
+	<td class="celda">     <p class="datos" id="m9-r6"> </p></td>
+	<td class="celda gris"><p class="datos" id="m9-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m9-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m9-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	<td class="T_12cm">
+	<p class="P_modulo">Administración de sistemas gestores de bases de datos.</p> {{-- 22 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m22-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m22-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m22-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m22-r4"> </p></td>
+	<td class="celda">     <p class="datos" id="m22-r5"> </p></td>
+	<td class="celda">     <p class="datos" id="m22-r6"> </p></td>
+	<td class="celda gris"><p class="datos" id="m22-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m22-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m22-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td class="T_12cm">
+	<p class="P_modulo"> </p>
+	</td>
+	<td class="T_12cm">
+	<p class="P_modulo">Seguridad y alta disponibilidad.</p>{{-- 23 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m23-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m23-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m23-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m23-r4"> </p></td>
+	<td class="celda">     <p class="datos" id="m23-r5"> </p></td>
+	<td class="celda">     <p class="datos" id="m23-r6"> </p></td>
+	<td class="celda">     <p class="datos" id="m23-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m23-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m23-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+
+	
+	<tr>
+	<td class="T_12cm">
+	<p class="P_modulo">Lenguajes de marcas y sistemas de gestión de información.</p>{{-- 10 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m10-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m10-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m10-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m10-r4"> </p></td>
+	<td class="celda">     <p class="datos" id="m10-r5"> </p></td>
+	<td class="celda">     <p class="datos" id="m10-r6"> </p></td>
+	<td class="celda">     <p class="datos" id="m10-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m10-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m10-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	<td class="T_12cm">
+	<p class="P_modulo">Implantación de aplicaciones web.</p> {{-- 21 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m21-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m21-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m21-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m21-r4"> </p></td>
+	<td class="celda">     <p class="datos" id="m21-r5"> </p></td>
+	<td class="celda">     <p class="datos" id="m21-r6"> </p></td>
+	<td class="celda">     <p class="datos" id="m21-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m21-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m21-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+
+
+	
+	<tr>
+	<td class="T_12cm">
+	<p class="P_modulo">Formación y orientación laboral.</p>{{-- 11 --}}
 	<table class="T_resultados">
 	<tr>
 	<td class="celda">     <p class="datos" id="m11-r1"> </p></td>
@@ -166,23 +333,46 @@ function rellenar_datos() {
 	<td class="celda">     <p class="datos" id="m11-r4"> </p></td>
 	<td class="celda">     <p class="datos" id="m11-r5"> </p></td>
 	<td class="celda">     <p class="datos" id="m11-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m11-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m11-r7"> </p></td>
 	<td class="celda gris"><p class="datos" id="m11-r8"> </p></td>
 	<td class="celda gris"><p class="datos" id="m11-r9"> </p></td>
 	</tr>
 	</table>
 	</td>
 	<td class="T_12cm">
-	<p class="P_modulo">Administración de sistemas operativos.</p> {{-- 24 --}}
+	<p class="P_modulo">Empresa e iniciativa empresarial.</p> {{-- 25 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m24-r1"></p></td>
-	<td class="celda">     <p class="datos" id="m24-r2"></p></td>
-	<td class="celda">     <p class="datos" id="m24-r3"></p></td>
-	<td class="celda">     <p class="datos" id="m24-r4"></p></td>
-	<td class="celda">     <p class="datos" id="m24-r5"></p></td>
-	<td class="celda">     <p class="datos" id="m24-r6"></p></td>
-	<td class="celda">     <p class="datos" id="m24-r7"></p></td>
+	<td class="celda">     <p class="datos" id="m25-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m25-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m25-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m25-r4"> </p></td>
+	<td class="celda gris"><p class="datos" id="m25-r5"> </p></td>
+	<td class="celda gris"><p class="datos" id="m25-r6"> </p></td>
+	<td class="celda gris"><p class="datos" id="m25-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m25-r8"> </p></td>
+	<td class="celda gris"><p class="datos" id="m25-r9"> </p></td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td class="T_12cm">
+	<p class="P_modulo"> </p>
+	</td>
+	<td class="T_12cm">
+	<p class="P_modulo">Proyecto de administración de sistemas informáticos en red.</p>{{-- 24 --}}
+	<table class="T_resultados">
+	<tr>
+	<td class="celda">     <p class="datos" id="m24-r1"> </p></td>
+	<td class="celda">     <p class="datos" id="m24-r2"> </p></td>
+	<td class="celda">     <p class="datos" id="m24-r3"> </p></td>
+	<td class="celda">     <p class="datos" id="m24-r4"> </p></td>
+	<td class="celda gris"><p class="datos" id="m24-r5"> </p></td>
+	<td class="celda gris"><p class="datos" id="m24-r6"> </p></td>
+	<td class="celda gris"><p class="datos" id="m24-r7"> </p></td>
 	<td class="celda gris"><p class="datos" id="m24-r8"> </p></td>
 	<td class="celda gris"><p class="datos" id="m24-r9"> </p></td>
 	</tr>
@@ -193,117 +383,10 @@ function rellenar_datos() {
 	
 	<tr>
 	<td class="T_12cm">
-	<p class="P_modulo">Planificación y administración de redes.</p> {{-- 12 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m12-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m12-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m12-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m12-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m12-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m12-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m12-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m12-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m12-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	<td class="T_12cm">
-	<p class="P_modulo">Servicios de red e Internet.</p>{{-- 25 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m25-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r7"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m25-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	</tr>
-	
-	<tr>
-	<td class="T_12cm">
-	<p class="P_modulo">Gestión de bases de datos.</p>{{-- 14 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m14-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m14-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m14-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m14-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m14-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m14-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m14-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m14-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m14-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	<td class="T_12cm">
-	<p class="P_modulo">Administración de sistemas gestores de bases de datos.</p> {{-- 27 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m27-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m27-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m27-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m27-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m27-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m27-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m27-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m27-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m27-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	</tr>
-	
-	
-	<tr>
-	<td class="T_12cm">
 	<p class="P_modulo"> </p>
 	</td>
 	<td class="T_12cm">
-	<p class="P_modulo">Seguridad y alta disponibilidad.</p>{{-- 28 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m28-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m28-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m28-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m28-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m28-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m28-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m28-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m28-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m28-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	</tr>
-
-	
-	<tr>
-	<td class="T_12cm">
-	<p class="P_modulo">Lenguajes de marcas y sistemas de gestión de información.</p>{{-- 15 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m15-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m15-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m15-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m15-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m15-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m15-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m15-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m15-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m15-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	<td class="T_12cm">
-	<p class="P_modulo">Implantación de aplicaciones web.</p> {{-- 26 --}}
+	<p class="P_modulo">Formación en centros de trabajo</p>{{-- 26 --}}
 	<table class="T_resultados">
 	<tr>
 	<td class="celda">     <p class="datos" id="m26-r1"> </p></td>
@@ -312,92 +395,9 @@ function rellenar_datos() {
 	<td class="celda">     <p class="datos" id="m26-r4"> </p></td>
 	<td class="celda">     <p class="datos" id="m26-r5"> </p></td>
 	<td class="celda">     <p class="datos" id="m26-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m26-r7"> </p></td>
+	<td class="celda gris"><p class="datos" id="m26-r7"> </p></td>
 	<td class="celda gris"><p class="datos" id="m26-r8"> </p></td>
 	<td class="celda gris"><p class="datos" id="m26-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	</tr>
-
-
-	
-	<tr>
-	<td class="T_12cm">
-	<p class="P_modulo">Formación y orientación laboral.</p>{{-- 16 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m16-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m16-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m16-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m16-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m16-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m16-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m16-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m16-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m16-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	<td class="T_12cm">
-	<p class="P_modulo">Empresa e iniciativa empresarial.</p> {{-- 30 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m30-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m30-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m30-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m30-r4"> </p></td>
-	<td class="celda gris"><p class="datos" id="m30-r5"> </p></td>
-	<td class="celda gris"><p class="datos" id="m30-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m30-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m30-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m30-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	</tr>
-	
-	
-	<tr>
-	<td class="T_12cm">
-	<p class="P_modulo"> </p>
-	</td>
-	<td class="T_12cm">
-	<p class="P_modulo">Proyecto de administración de sistemas informáticos en red.</p>{{-- 29 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m29-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m29-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m29-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m29-r4"> </p></td>
-	<td class="celda gris"><p class="datos" id="m29-r5"> </p></td>
-	<td class="celda gris"><p class="datos" id="m29-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m29-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m29-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m29-r9"> </p></td>
-	</tr>
-	</table>
-	</td>
-	</tr>
-	
-	
-	<tr>
-	<td class="T_12cm">
-	<p class="P_modulo"> </p>
-	</td>
-	<td class="T_12cm">
-	<p class="P_modulo">Formación en centros de trabajo</p>{{-- 31 --}}
-	<table class="T_resultados">
-	<tr>
-	<td class="celda">     <p class="datos" id="m31-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m31-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m31-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m31-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m31-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m31-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m31-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m31-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m31-r9"> </p></td>
 	</tr>
 	</table>
 	</td>

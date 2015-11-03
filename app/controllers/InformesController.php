@@ -20,23 +20,14 @@ class InformesController extends \BaseController {
 		// get the modulo
 		$alumno = Alumno::find($id);
 		
-		if ((strpos($alumno->curso,'1FPGM A') !== false)) 
-		    return View::make('informes.gmacalificaciones')->with('alumno', $alumno);
-		elseif (strpos($alumno->curso,'1FPGM B') !== false)
-		    return View::make('informes.gmbcalificaciones')->with('alumno', $alumno);
-		elseif (strpos($alumno->curso,'2FPGM') !== false){
-		    if ($alumno->modulos->contains(1) or $alumno->modulos->contains(2) 
-		     or $alumno->modulos->contains(3) or $alumno->modulos->contains(4) or $alumno->modulos->contains(5))
-		       return View::make('informes.gmacalificaciones')->with('alumno', $alumno);
-		    else
-		       return View::make('informes.gmbcalificaciones')->with('alumno', $alumno);
-		}
+		if ((strpos($alumno->curso,'FPGM') !== false)) 
+		    return View::make('informes.gmcalificaciones')->with('alumno', $alumno);
 		elseif (strpos($alumno->curso,'FPGS') !== false)
 		    return View::make('informes.gscalificaciones')->with('alumno', $alumno);
 		else
 		    return View::make('informes.error');
 		
-	}
+        }
 	
 	public function evaluacion($curso, $medio) {
 	    //
@@ -95,17 +86,8 @@ class InformesController extends \BaseController {
 	    $pdf = PDF::make();
  
 	    $alumno = Alumno::find($id);
-		if ((strpos($alumno->curso,'1FPGM A') !== false)) 
-		    $html = View::make('informes.gmacalificaciones')->with('alumno', $alumno);
-		elseif (strpos($alumno->curso,'1FPGM B') !== false)
-		    $html = View::make('informes.gmbcalificaciones')->with('alumno', $alumno);
-		elseif (strpos($alumno->curso,'2FPGM') !== false){
-		    if ($alumno->modulos->contains(1) or $alumno->modulos->contains(2) 
-		     or $alumno->modulos->contains(3) or $alumno->modulos->contains(4) or $alumno->modulos->contains(5))
-		       $html = View::make('informes.gmacalificaciones')->with('alumno', $alumno);
-		    else
-		       $html = View::make('informes.gmbcalificaciones')->with('alumno', $alumno);
-		}
+		if ((strpos($alumno->curso,'FPGM') !== false)) 
+		    $html = View::make('informes.gmcalificaciones')->with('alumno', $alumno);
 		elseif (strpos($alumno->curso,'FPGS') !== false)
 		    $html = View::make('informes.gscalificaciones')->with('alumno', $alumno);
 		else
@@ -136,17 +118,8 @@ class InformesController extends \BaseController {
 	    foreach ($ids as $id) {
 		$alumno = Alumno::find($id);
 		
-		if ((strpos($alumno->curso,'1FPGM A') !== false)) 
-		    $informe = 'informes.gmacalificaciones';
-		elseif (strpos($alumno->curso,'1FPGM B') !== false)
-		    $informe = 'informes.gmbcalificaciones';
-		elseif (strpos($alumno->curso,'2FPGM') !== false){
-		    if ($alumno->modulos->contains(1) or $alumno->modulos->contains(2) 
-		     or $alumno->modulos->contains(3) or $alumno->modulos->contains(4) or $alumno->modulos->contains(5))
-		       $informe = 'informes.gmacalificaciones';
-		    else
-		       $informe = 'informes.gmbcalificaciones';
-		}
+		if ((strpos($alumno->curso,'FPGM') !== false)) 
+		    $informe = 'informes.gmcalificaciones';
 		elseif (strpos($alumno->curso,'FPGS') !== false)
 		    $informe = 'informes.gscalificaciones';
 		else
