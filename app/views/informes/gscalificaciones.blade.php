@@ -47,11 +47,11 @@
 
 	
 	.celda { 
-	  padding:0.097cm; text-align:center;width:1.406cm;
+	   padding:0; text-align:left; vertical-align: top; width:1.406cm;
 	  border-width:thin; border-style:solid; border-color:#000000;  
 	 }
 	.gris  { background-color:#808080; }	
-	.datos { font-size:12pt; font-family:Arial; writing-mode:page; font-style:normal; font-weight:bold; }
+	.datos { font-size:6pt; min-height: 24px; font-family:Arial; writing-mode:page; font-style:normal; font-weight:bold;  }
 
 	.P_orden, .P_cursos, .P_alumno  { 
 	  margin-bottom:0.212cm; margin-top:0cm;
@@ -81,14 +81,18 @@ function rellenar_datos() {
         <?php /* Obtenemos nota con el siguiente código PHP. No encontre mejor manera de hacerlo. */ ?>
 	<?php $str="$"."modulo->pivot->r".$i; $nota = eval ("return $str;"); ?>
         @if ($nota == '-2')  
-        document.getElementById("m{{$modulo->id}}-r{{$i}}").innerHTML = "<img src={{URL::to('img/iconos/punto.png')}} width=16>"
+        document.getElementById("m{{$modulo->id}}-r{{$i}}").style.background = "url({{URL::to('img/iconos/punto.png')}}) no-repeat center";
+        document.getElementById("m{{$modulo->id}}-r{{$i}}").style.backgroundSize = "16px 16px";
         @elseif ($nota == '-1')
-        document.getElementById("m{{$modulo->id}}-r{{$i}}").innerHTML = "<img src={{URL::to('img/iconos/asterisco.png')}} width=16>"
+        document.getElementById("m{{$modulo->id}}-r{{$i}}").style.background = "url({{URL::to('img/iconos/asterisco.png')}}) no-repeat center";
+        document.getElementById("m{{$modulo->id}}-r{{$i}}").style.backgroundSize = "16px 16px";
         @else
             @if ($nota < 5)
-            document.getElementById("m{{$modulo->id}}-r{{$i}}").innerHTML = "<img src={{URL::to('img/iconos/menos.png')}} width=16>"
+            document.getElementById("m{{$modulo->id}}-r{{$i}}").style.background = "url({{URL::to('img/iconos/menos.png')}}) no-repeat center";
+            document.getElementById("m{{$modulo->id}}-r{{$i}}").style.backgroundSize = "16px 16px";
             @else
-            document.getElementById("m{{$modulo->id}}-r{{$i}}").innerHTML = "<img src={{URL::to('img/iconos/mas.png')}} width=16>"
+            document.getElementById("m{{$modulo->id}}-r{{$i}}").style.background = "url({{URL::to('img/iconos/mas.png')}}) no-repeat center";
+            document.getElementById("m{{$modulo->id}}-r{{$i}}").style.backgroundSize = "16px 16px";
             @endif
         @endif
       @endfor
@@ -98,6 +102,7 @@ function rellenar_datos() {
            
 }
 </script>
+
 
 
 </head>
@@ -139,15 +144,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Fundamentos de hardware.</p> {{-- 8 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m8-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m8-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m8-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m8-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m8-r5"> </p></td>
-	<td class="celda gris"><p class="datos" id="m8-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m8-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m8-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m8-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m8-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m8-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m8-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m8-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m8-r5">RA5</p></td>
+	<td class="celda gris"><p class="datos" id="m8-r6">RA6</p></td>
+	<td class="celda gris"><p class="datos" id="m8-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m8-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m8-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -160,15 +165,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Implantación de sistemas operativos.</p> {{-- 6 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m6-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m6-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m6-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m6-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m6-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m6-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m6-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m6-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m6-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m6-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m6-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m6-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m6-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m6-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m6-r6">RA6</p></td>
+	<td class="celda">     <p class="datos" id="m6-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m6-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m6-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -176,15 +181,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Administración de sistemas operativos.</p> {{-- 19 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m19-r1"></p></td>
-	<td class="celda">     <p class="datos" id="m19-r2"></p></td>
-	<td class="celda">     <p class="datos" id="m19-r3"></p></td>
-	<td class="celda">     <p class="datos" id="m19-r4"></p></td>
-	<td class="celda">     <p class="datos" id="m19-r5"></p></td>
-	<td class="celda">     <p class="datos" id="m19-r6"></p></td>
-	<td class="celda">     <p class="datos" id="m19-r7"></p></td>
-	<td class="celda gris"><p class="datos" id="m19-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m19-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m19-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m19-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m19-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m19-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m19-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m19-r6">RA6</p></td>
+	<td class="celda">     <p class="datos" id="m19-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m19-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m19-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -196,15 +201,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Planificación y administración de redes.</p> {{-- 7 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m7-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m7-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m7-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m7-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m7-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m7-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m7-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m7-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m7-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m7-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m7-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m7-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m7-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m7-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m7-r6">RA6</p></td>
+	<td class="celda">     <p class="datos" id="m7-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m7-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m7-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -212,17 +217,16 @@ function rellenar_datos() {
 	<p class="P_modulo">Servicios de red e Internet.</p>{{-- 20 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m20-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m20-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m20-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m20-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m20-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m20-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m20-r7"> </p></td>
-	<td class="celda">     <p class="datos" id="m20-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m20-r9"> </p></td>
-	</tr>
-	</table>
+	<td class="celda">     <p class="datos" id="m20-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m20-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m20-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m20-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m20-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m20-r6">RA6</p></td>
+	<td class="celda">     <p class="datos" id="m20-r7">RA7</p></td>
+	<td class="celda">     <p class="datos" id="m20-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m20-r9">RA9</p></td>
+	</tr>	</table>
 	</td>
 	</tr>
 	
@@ -231,15 +235,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Gestión de bases de datos.</p>{{-- 9 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m9-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m9-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m9-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m9-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m9-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m9-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m9-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m9-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m9-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m9-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m9-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m9-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m9-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m9-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m9-r6">RA6</p></td>
+	<td class="celda gris"><p class="datos" id="m9-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m9-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m9-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -247,15 +251,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Administración de sistemas gestores de bases de datos.</p> {{-- 22 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m22-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m22-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m22-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m22-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m22-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m22-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m22-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m22-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m22-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m22-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m22-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m22-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m22-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m22-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m22-r6">RA6</p></td>
+	<td class="celda gris"><p class="datos" id="m22-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m22-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m22-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -270,15 +274,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Seguridad y alta disponibilidad.</p>{{-- 23 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m23-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m23-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m23-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m23-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m23-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m23-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m23-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m23-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m23-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m23-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m23-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m23-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m23-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m23-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m23-r6">RA6</p></td>
+	<td class="celda">     <p class="datos" id="m23-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m23-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m23-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -290,15 +294,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Lenguajes de marcas y sistemas de gestión de información.</p>{{-- 10 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m10-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m10-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m10-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m10-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m10-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m10-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m10-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m10-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m10-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m10-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m10-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m10-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m10-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m10-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m10-r6">RA6</p></td>
+	<td class="celda">     <p class="datos" id="m10-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m10-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m10-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -306,15 +310,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Implantación de aplicaciones web.</p> {{-- 21 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m21-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m21-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m21-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m21-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m21-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m21-r6"> </p></td>
-	<td class="celda">     <p class="datos" id="m21-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m21-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m21-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m21-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m21-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m21-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m21-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m21-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m21-r6">RA6</p></td>
+	<td class="celda">     <p class="datos" id="m21-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m21-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m21-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -327,15 +331,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Formación y orientación laboral.</p>{{-- 11 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m11-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m11-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m11-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m11-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m11-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m11-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m11-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m11-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m11-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m11-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m11-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m11-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m11-r4">RA4</p></td>
+	<td class="celda">     <p class="datos" id="m11-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m11-r6">RA6</p></td>
+	<td class="celda gris"><p class="datos" id="m11-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m11-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m11-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -343,15 +347,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Empresa e iniciativa empresarial.</p> {{-- 25 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m25-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m25-r4"> </p></td>
-	<td class="celda gris"><p class="datos" id="m25-r5"> </p></td>
-	<td class="celda gris"><p class="datos" id="m25-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m25-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m25-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m25-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m25-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m25-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m25-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m25-r4">RA4</p></td>
+	<td class="celda gris"><p class="datos" id="m25-r5">RA5</p></td>
+	<td class="celda gris"><p class="datos" id="m25-r6">RA6</p></td>
+	<td class="celda gris"><p class="datos" id="m25-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m25-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m25-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -366,15 +370,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Proyecto de administración de sistemas informáticos en red.</p>{{-- 24 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m24-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m24-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m24-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m24-r4"> </p></td>
-	<td class="celda gris"><p class="datos" id="m24-r5"> </p></td>
-	<td class="celda gris"><p class="datos" id="m24-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m24-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m24-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m24-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m24-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m24-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m24-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m24-r4">RA4</p></td>
+	<td class="celda gris"><p class="datos" id="m24-r5">RA5</p></td>
+	<td class="celda gris"><p class="datos" id="m24-r6">RA6</p></td>
+	<td class="celda gris"><p class="datos" id="m24-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m24-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m24-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
@@ -389,15 +393,15 @@ function rellenar_datos() {
 	<p class="P_modulo">Formación en centros de trabajo</p>{{-- 26 --}}
 	<table class="T_resultados">
 	<tr>
-	<td class="celda">     <p class="datos" id="m26-r1"> </p></td>
-	<td class="celda">     <p class="datos" id="m26-r2"> </p></td>
-	<td class="celda">     <p class="datos" id="m26-r3"> </p></td>
-	<td class="celda">     <p class="datos" id="m26-r4"> </p></td>
-	<td class="celda">     <p class="datos" id="m26-r5"> </p></td>
-	<td class="celda">     <p class="datos" id="m26-r6"> </p></td>
-	<td class="celda gris"><p class="datos" id="m26-r7"> </p></td>
-	<td class="celda gris"><p class="datos" id="m26-r8"> </p></td>
-	<td class="celda gris"><p class="datos" id="m26-r9"> </p></td>
+	<td class="celda">     <p class="datos" id="m26-r1">RA1</p></td>
+	<td class="celda">     <p class="datos" id="m26-r2">RA2</p></td>
+	<td class="celda">     <p class="datos" id="m26-r3">RA3</p></td>
+	<td class="celda">     <p class="datos" id="m26-r4">RA4/p></td>
+	<td class="celda">     <p class="datos" id="m26-r5">RA5</p></td>
+	<td class="celda">     <p class="datos" id="m26-r6">RA6</p></td>
+	<td class="celda gris"><p class="datos" id="m26-r7">RA7</p></td>
+	<td class="celda gris"><p class="datos" id="m26-r8">RA8</p></td>
+	<td class="celda gris"><p class="datos" id="m26-r9">RA9</p></td>
 	</tr>
 	</table>
 	</td>
