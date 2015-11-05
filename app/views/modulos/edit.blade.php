@@ -62,8 +62,7 @@ var STATE_NONE=0;var STATE_SOME=1;var STATE_ALL=2;var UNCHECKED_NORM="UNCHECKED_
 		{{ Form::label('curso', 'Curso') }}
 		{{-- Form::text('curso', Input::old('curso'), array('class' => 'form-control')) --}}
 		<select class="form-control text-right" name='curso' disabled='disabled'>
-		  <option value='1FPGM A' @if ($modulo->curso == '1FPGM A') {{ 'selected' }} @endif>1FPGM A</option>
-		  <option value='1FPGM B' @if ($modulo->curso == '1FPGM B') {{ 'selected' }} @endif>1FPGM B</option>
+		  <option value='1FPGM'   @if ($modulo->curso == '1FPGM')   {{ 'selected' }} @endif>1FPGM  </option>
 		  <option value='2FPGM'   @if ($modulo->curso == '2FPGM')   {{ 'selected' }} @endif>2FPGM  </option>
 		  <option value='1FPGS'   @if ($modulo->curso == '1FPGS')   {{ 'selected' }} @endif>1FPGS  </option>
 		  <option value='2FPGS'   @if ($modulo->curso == '2FPGS')   {{ 'selected' }} @endif>2FPGS  </option>

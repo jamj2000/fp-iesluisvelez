@@ -61,7 +61,7 @@ La aplicación tiene un límite máximo de 9 casillas para otros tantos resultad
 
 <h3>Aplicación para Android</h3>
 Existe una aplicación para Android que puedes descargar en el siguiente enlace.<br><br>
-<a class="col-md-4" href="https://drive.google.com/open?id=0B1RxM5nsBsp3S0l0NUF6a0ZaOWs&authuser=0">  <img src="{{ URL::asset('img/app-logo.png')}}" >  </a>
+<a class="col-md-4" href="https://drive.google.com/file/d/0B1RxM5nsBsp3ZUtlVnJmUU1lZWx3dHViQk95aXR5djVId3Aw/view?usp=sharing">  <img src="{{ URL::asset('img/app-logo.png')}}" >  </a>
 <br><br>
 
 

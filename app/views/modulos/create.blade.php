@@ -33,8 +33,7 @@
 		{{ Form::label('curso', 'Curso') }}
 		{{-- Form::text('curso', Input::old('curso'), array('class' => 'form-control')) --}}
 		<select class="form-control text-right" name='curso'>
-		  <option value='1FPGM A'>1FPGM A</option>
-		  <option value='1FPGM B'>1FPGM B</option>
+		  <option value='1FPGM'>  1FPGM  </option>
 		  <option value='2FPGM'>  2FPGM  </option>
 		  <option value='1FPGS'>  1FPGS  </option>
 		  <option value='2FPGS'>  2FPGS  </option>
