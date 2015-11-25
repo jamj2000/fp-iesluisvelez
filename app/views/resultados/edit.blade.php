@@ -82,7 +82,8 @@
         <div class="panel-heading alto55">{{ Form::submit('Actualizar', array('class' => 'btn btn-primary', 'style' => 'float: right !important;')) }}
            <b>{{ $modulo->curso.' - '.$modulo->nombre }}</b></div>
 	<div class="list-group">
-        @foreach($modulo->alumnos as $alumno)
+
+	@foreach($alumnos as $alumno)
           <div class="container"><br>
 	  <div class="dl-vertical">
 	      <div class="row"><b>{{ $alumno->nombre.' '.$alumno->apellido1.' '.$alumno->apellido2 }}</b></div>

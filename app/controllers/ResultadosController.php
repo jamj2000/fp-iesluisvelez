@@ -23,8 +23,12 @@ class ResultadosController extends \BaseController {
 	 */
 	public function edit($id)
 	{
+		//$modulo = Modulo::find($id);
+		//return View::make('resultados.edit')->with('modulo', $modulo);
+		
 		$modulo = Modulo::find($id);
-		return View::make('resultados.edit')->with('modulo', $modulo);
+                $alumnos = Modulo::find($id)->alumnos->sortBy('apellido1');
+		return View::make('resultados.edit')->with('modulo', $modulo)->with('alumnos', $alumnos);
 		
 	}
 
