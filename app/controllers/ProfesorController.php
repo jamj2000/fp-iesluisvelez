@@ -10,7 +10,7 @@ class ProfesorController extends \BaseController {
 	public function index()
 	{
 		// get all the profesores
-		$profesores = Profesor::all();
+		$profesores = Profesor::all()->sortBy('apellido1');
 
 		// load the view and pass the profesores
 		return View::make('profesores.index')->with('profesores', $profesores);

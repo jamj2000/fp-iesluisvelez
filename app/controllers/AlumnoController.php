@@ -10,7 +10,7 @@ class AlumnoController extends \BaseController {
 	public function index()
 	{
 		// get all the alumnos
-		$alumnos = Alumno::all();
+		$alumnos = Alumno::all()->sortBy('apellido1');
 
 		// load the view and pass the alumnos
 		return View::make('alumnos.index')->with('alumnos', $alumnos);
