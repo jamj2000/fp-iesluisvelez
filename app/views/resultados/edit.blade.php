@@ -84,7 +84,7 @@
 	<div class="list-group">
 
 	@foreach($alumnos as $alumno)
-          <div class="container"><br>
+	  <div class="container"><br>
 	  <div class="dl-vertical">
 	      <div class="row"><b>{{ $alumno->nombre.' '.$alumno->apellido1.' '.$alumno->apellido2 }}</b></div>
 	      

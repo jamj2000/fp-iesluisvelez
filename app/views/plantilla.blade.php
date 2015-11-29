@@ -9,7 +9,7 @@
   {{HTML::style('css/bootstrap.css')}}
   {{HTML::style('css/bootstrap-select.css')}}
   {{HTML::style('css/added.css')}}
-  <script src="http://code.jquery.com/jquery.js"></script>
+  {{HTML::script('js/jquery.min.js')}}
   {{HTML::script('js/bootstrap.min.js')}}
   {{HTML::script('js/bootstrap-select.js')}}
 
