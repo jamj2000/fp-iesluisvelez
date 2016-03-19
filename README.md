@@ -4,6 +4,6 @@
 
 
 ## Introducción
-__fp-resultados__ es una aplicación web destinada al profesorado de Formación Profesional en España. Realizada en mi tiempo libre para seguir aprendiendo sobre distintas tecnologías web. La pongo a disposición de toda la comunidad por si alguien la considera interesante por motivos didácticos o de producción.
+__fp-luisvelez__ es la aplicación web utilizada por el profesorado de Formación Profesional de la familia de Informática y Comunicaciones del IES Luis Vélez de Guevara (Écija) para gestionar los informes de calificaciones y evaluación por resultados de aprendizaje para el alumnado de los ciclos de FP de Informática. 
 
-![Captura web](https://github.com/jamj2000/fp-iesluisvelez/blob/master/ies-luisvelez-logo.png "Captura web")
+![Captura web](https://github.com/jamj2000/fp-iesluisvelez/blob/master/ies-luisvelez-captura.png "Captura web")
