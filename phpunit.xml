@@ -10,11 +10,10 @@
          stopOnFailure="false"
          syntaxCheck="false"
 >
-<!-- Desactivando pruebas de unidad
     <testsuites>
         <testsuite name="Application Test Suite">
-            <directory>./app/tests/</directory>
+<!-- Desactivando pruebas de unidad        <directory>./app/tests/</directory>  -->
         </testsuite>
     </testsuites>
--->
+
 </phpunit>
