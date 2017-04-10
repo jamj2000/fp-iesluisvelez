@@ -1,5 +1,7 @@
 
 # fp-iesluisvelez
+[![Build Status](https://travis-ci.org/jamj2000/fp-iesluisvelez.svg?branch=master)](https://travis-ci.org/jamj2000/fp-iesluisvelez)
+
 ![Logo de ejemplo](https://github.com/jamj2000/fp-iesluisvelez/blob/master/ies-luisvelez-logo.png "Logo de ejemplo")
 
 
